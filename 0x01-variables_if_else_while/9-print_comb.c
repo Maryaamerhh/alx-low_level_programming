@@ -14,8 +14,10 @@ int main(void)
 		putchar((digit % 10) + '0');
 		if (digit == 9)
 			continue;
+
+
 		putchar(',');
-		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 
