@@ -8,25 +8,24 @@
  */
 int main(void)
 {
-	long pf = 612852475143, v;
+	long prime = 612852475143, div;
 
-	while (v < (pf / 2))
+	while (div < (prime / 2))
 	{
-		if ((pf % 2) == 0)
+		if ((prime % 2) == 0)
 		{
-			pf /= 2;
+			prime /= 2;
 			continue;
 		}
 
-		for (v = 3; v < (pf / 2); v += 2)
+		for (div = 3; div < (prime / 2); div += 2)
 		{
-			if ((pf % v) == 0)
-				pf /= v;
+			if ((prime % div) == 0)
+				prime /= div;
 		}
 	}
 
-	printf("%ld\n", pf);
+	printf("%ld\n", prime);
 
 	return (0);
 }
-
