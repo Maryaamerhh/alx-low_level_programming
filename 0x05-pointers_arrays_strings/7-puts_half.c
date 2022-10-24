@@ -1,21 +1,10 @@
 #include "main.h"
 
-/**
- * puts_half - prints the second half of the string
- * @str: the string reference
- * Return: 0
- */
-
-void puts_half(char *str)
+int main(void)
 {
-	int i;
+	char *str;
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
-	i++;
-	for (i /= 2; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+	str = "0123456789";
+	puts_half(str);
+	return (0);
 }
