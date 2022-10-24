@@ -1,10 +1,19 @@
 #include "main.h"
 
-int main(void)
-{
-	char *str;
+/**
+ * _puts - prints string
+ * @str: string
+ * Return: Always 0
+ */
 
-	str = "I do not fear computers. i fear the lack of them - isaac Asimov";
-	_puts(str);
-	return (0);
+void _puts(char *str)
+{
+	int m = 0;
+
+	while (str[m] != '\0')
+	{
+		putchar(str[m]);
+		m++;
+	}
+	putchar('\n');
 }
