@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * _memset - this function fills a block of memory with a paticular value.
  * @s: pointer.
@@ -10,13 +11,8 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-
-	unsigned int i;
-
-
-	for (i	= 0; n > 0; i++, n--)
-	{
-		s[i] = b;
-	}
+char *ptr = s;
+while (n-- > 0)
+	*ptr++ = b;
 	return (s);
 }
