@@ -1,8 +1,8 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
 
 /*
- * File: main.h
+ * File variadic_functions.h
  * Desc: Header file containing prototypes for all functions
  *       used in the 0x10-variadic_functions directory.
  */
